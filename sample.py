@@ -1,4 +1,4 @@
-def discount_calc(unit_price,quantity):
+def dis_calc(unit_price,quantity):
     amount = quantity * unit_price
     if unit_price >= 500 :
         discount = 0.05 * amount
@@ -18,7 +18,7 @@ mgst = []
 final_amt = []
 for i in range(length):
     #for j in range(i+1):
-    result1 = discount_calc(product_list[i][1],product_list[i][3])
+    result1 = dis_calc(product_list[i][1],product_list[i][3])
     result2 = gst_cal(result1,product_list[i][2])
     fprice1 = result1 + result2
     final_amt.append(fprice1)
